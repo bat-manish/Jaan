@@ -1,0 +1,85 @@
+
+body{
+    margin: 0px;
+    background-color: aqua;
+}
+img{
+    height: 100%;
+}
+  #container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:100%;
+    height: 50%;
+
+  }
+  #container {
+    perspective: 1000;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all .3s linear;
+  }
+  #container:hover #card1 {
+    transform: rotateX(180deg)translate(0,50%);
+    transform-origin:top;
+  }
+
+  #container:hover #card2{
+
+    transform: rotateX(180deg)translate(0,-50%);
+  }
+  #card1{
+      transform: translate(0,-100%);
+  }
+#card2{
+    transform:rotateX(180deg); 
+}
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+  }
+  .face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background: url("../images/Layer3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #face1{
+    background: url("../images/Layer1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #face2{
+    
+    background: url("../images/Layer3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #face3{
+    background: url("../images/Layer2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #face4{
+    background: url("../images/Layer4.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
